@@ -11,9 +11,12 @@ button {
     font-size:large;
     border-radius: 5px;
     outline: none;
+    display: inline-block;
     margin-left:auto;
     margin-right:auto;
-    display:block;
+}
+.highscore-btn {
+    margin-top:2rem
 }
 
 input {
@@ -23,6 +26,12 @@ input {
     width:70%;
     margin-left:auto;
     margin-right:auto;
+}
+#main-section {
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
 }
 #main-heading {
     text-align:center;

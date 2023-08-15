@@ -94,6 +94,15 @@
             // check if game is over
             if(state.timeElapsed ===  state.gameLength) {
                 alert (`Game is over...WPM is, ${wpm.textContent}`);
+                // add to high score list
+                const scores = JSON.parse(localStorage.getItem('highscores')) || [];
+                scores.push(wpm.textContent);
+                scores.sort();
+                if(scores.length > 10) {
+                    scores.shift();
+                }
+                // store new high score
+                localStorage.setItem('highscores', JSON.stringify(scores));
                 // refresh the page
                 window.location.reload();
             }
