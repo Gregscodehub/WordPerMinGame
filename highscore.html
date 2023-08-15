@@ -46,9 +46,13 @@
     </div>
 
     <script>
+            // get ul
             const highScores = document.querySelector('ul');
+            // get highscore from localstorage if they exist
             let scores = JSON.parse(localStorage.getItem('highscores')) || [];
+            // sort scores in reverse
             scores = scores.sort().reverse();
+            // helper function
             function createListItem(content) {
                 const li = document.createElement('li');
                 li.textContent = content;
