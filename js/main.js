@@ -9,7 +9,7 @@
         const wpm = document.getElementById('wpm-display');
         const form = document.getElementById('form');
         const mainContent = document.getElementById('main-content');
-        const highScoreBtn = document.getElementById('heightscore-btn');
+        const highScoreBtn = document.getElementById('heighscore');
         const mainHeading = document.getElementById('main-heading');
         const state = {
             currentWord: '',
