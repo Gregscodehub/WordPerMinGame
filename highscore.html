@@ -6,6 +6,9 @@
     <style>
         ul {
             list-style: none;
+            padding:10px 0;
+            font-size:1.5rem;
+            line-height:1.5
         }
         body {
             font-family: Arial, Helvetica, sans-serif;
@@ -16,13 +19,30 @@
         .d-block {
             display:block;
         }
+        .container {
+            max-width: 500px;
+            margin-left:auto;
+            margin-right:auto;
+            text-align:center;
+        }
+        .btn {
+            background: rgb(43, 27, 201);
+            color:white;
+            cursor: pointer;
+            padding:15px;
+            border:none;
+            font-size:large;
+            border-radius: 5px;
+            display:inline-block;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1 class="text-center">High Scores (WPM)</h1>
+        <h1 class="text-center">Last 10 High Scores (WPM)</h1>
         <ul class="text-center"></ul>
-        <a href="./index.html" class="text-center d-block">Back to game</a>
+        <a href="./index.html" class="btn text-center d-block">Back to game</a>
     </div>
 
     <script>
