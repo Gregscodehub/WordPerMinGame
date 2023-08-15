@@ -9,6 +9,7 @@
         const wpm = document.getElementById('wpm-display');
         const form = document.getElementById('form');
         const mainContent = document.getElementById('main-content');
+        const highScoreBtn = document.getElementById('heightscore-btn');
         const state = {
             currentWord: '',
             score: 0,
@@ -73,6 +74,8 @@
             textDisplay.className = '';
             // show the stats
             stats.className = ''
+            // hide highscore button
+            highScoreBtn.className = 'hide';
             // show the input field
             input.className = '';
             // focus input
