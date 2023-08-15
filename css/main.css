@@ -51,6 +51,7 @@ input {
     margin-right:auto;
     text-align:center;
     font-size:3rem;
+    padding:1rem 0;
 }
 .green {
     background: green;
@@ -59,4 +60,11 @@ input {
 .red {
     background:red;
     padding:5px;
+}
+#stats p {
+    font-size:1.3rem;
+    text-align:center;
+}
+#wpm-display, #score-display, #time-display {
+    margin-left:10px;
 }

@@ -10,6 +10,7 @@
         const form = document.getElementById('form');
         const mainContent = document.getElementById('main-content');
         const highScoreBtn = document.getElementById('heightscore-btn');
+        const mainHeading = document.getElementById('main-heading');
         const state = {
             currentWord: '',
             score: 0,
@@ -76,6 +77,8 @@
             stats.className = ''
             // hide highscore button
             highScoreBtn.className = 'hide';
+            // hide main heading when game starts
+            mainHeading.className = 'hide';
             // show the input field
             input.className = '';
             // focus input
