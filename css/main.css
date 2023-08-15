@@ -1,5 +1,7 @@
 body {
     font-family: arial, Helvetica, sans-serif;
+    background: rgb(0, 19, 37);
+    color:white;
 }
 
 button {
